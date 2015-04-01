@@ -61,6 +61,24 @@ namespace il.examples.nancyfx.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hallo Welt!.
+        /// </summary>
+        public static string Hello_World {
+            get {
+                return ResourceManager.GetString("Hello_World", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kennwort.
+        /// </summary>
+        public static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Benutzername.
         /// </summary>
         public static string UserName {

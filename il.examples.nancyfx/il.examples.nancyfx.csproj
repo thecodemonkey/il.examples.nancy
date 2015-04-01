@@ -83,12 +83,14 @@
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Common\IUserRepository.cs" />
+    <Compile Include="Common\MailTemplateService.cs" />
     <Compile Include="Common\TranslateTokenViewEngineMatcher.cs" />
     <Compile Include="Common\UserRepository.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Modules\DIModule.cs" />
     <Compile Include="Modules\HelloModule.cs" />
     <Compile Include="Modules\BindingModule.cs" />
+    <Compile Include="Modules\MailModule.cs" />
     <Compile Include="Modules\NegotiationsModule.cs" />
     <Compile Include="Modules\RoutesModule.cs" />
     <Compile Include="Modules\ViewsModule.cs" />
@@ -107,15 +109,18 @@
     <Content Include="content\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="views\simple.md">
+    <EmbeddedResource Include="views\simple.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
     <Content Include="views\simple.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="views\hallo.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="views\registration.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="views\simple.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
